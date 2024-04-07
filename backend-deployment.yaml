@@ -24,11 +24,10 @@ spec:
         io.kompose.service: backend
     spec:
       containers:
-        - image: microservice-backend:latest
+        - image: ompatel4799backend:latest
           name: backend
           ports:
             - containerPort: 5000
           resources: {}
-          imagePullPolicy: Never  # Ensure image is pulled from local Docker daemon
       restartPolicy: Always
 status: {}
