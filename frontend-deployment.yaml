@@ -24,11 +24,10 @@ spec:
         io.kompose.service: frontend
     spec:
       containers:
-      - image: microservice-frontend:latest
+      - image: ompatel4799/frontend:latest
         name: frontend
         ports:
         - containerPort: 5001
         resources: {}
-        imagePullPolicy: Never  # Ensure image is pulled from local Docker daemon
       restartPolicy: Always
 status: {}
