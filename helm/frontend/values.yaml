@@ -1,0 +1,12 @@
+# values.yaml
+replicaCount: 1
+labels:
+  app: frontend
+  stack: backend
+
+image:
+  repository: ompatel4799/frontend
+  tag: latest
+
+containerPort: 5001
+servicePort: 80
