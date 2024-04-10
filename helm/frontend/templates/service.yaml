@@ -1,0 +1,12 @@
+# frontend-service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Release.Name }}-frontend
+spec:
+  ports:
+  - name: "{{ .Values.servicePort }}"
+    port: {{ .Values.servicePort }}
+    targetPort: {{ .Values.containerPort }}
+  selector:
+    app: {{ .Release.Name }}-frontend
