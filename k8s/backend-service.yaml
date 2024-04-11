@@ -5,6 +5,7 @@ metadata:
     kompose.cmd: kompose convert -f docker-compose.yml
     kompose.version: 1.24.0 (4a2a0458)
   creationTimestamp: null
+  namespace: test
   labels:
     io.kompose.service: backend
   name: backend
